@@ -3,28 +3,16 @@ import { AuthResponse, LoginRequest } from '../../interfaces/auth';
 import { axiosInstance } from '../axios';
 
 export const login = async (user: LoginRequest) => {
-	try {
-		const { data } = await axiosInstance.post<AuthResponse>('/auth/login', user);
-		return data;
-	} catch (error) {
-		console.log(error);
-	}
+	const { data } = await axiosInstance.post<AuthResponse>('api/auth/login', user);
+	return data;
 };
 
 export const register = async (user: LoginRequest) => {
-	try {
-		const { data } = await axiosInstance.post<AuthResponse>('/auth/register', user);
-		return data;
-	} catch (error) {
-		console.log(error);
-	}
+	const { data } = await axiosInstance.post<AuthResponse>('api/auth/register', user);
+	return data;
 };
 
 export const verify = async () => {
-	try {
-		const { data } = await axiosInstance.get<UserPayload>('/api/auth/verify');
-		return data;
-	} catch (error) {
-		console.log(error);
-	}
+	const { data } = await axiosInstance.get<UserPayload>('api/auth/verify');
+	return data;
 };

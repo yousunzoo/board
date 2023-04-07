@@ -11,10 +11,10 @@ export interface UserPayload {
 	id: number;
 	username: string;
 	email: string;
+	accessToken: string;
 }
 
 export interface AuthResponse extends UserPayload {
 	iat: number;
 	exp: number;
-	accessToken: string;
 }
