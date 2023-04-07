@@ -1,14 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from '../components/Layout';
+import Login from '../pages/Login';
 
 function Router() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path='/' element={<div>Home</div>} />
-				<Route path='/login' element={<div>Login</div>} />
-				<Route path='/register' element={<div>Register</div>} />
-				<Route path='/posts' element={<div>posts</div>} />
+				<Route path='/' element={<Layout />}>
+					<Route path='/' element={<div>Home</div>} />
+					<Route path='/login' element={<Login />} />
+					<Route path='/register' element={<div>Register</div>} />
+					<Route path='/posts' element={<div>posts</div>} />
+				</Route>
 			</Routes>
 		</BrowserRouter>
 	);
