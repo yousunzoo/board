@@ -15,6 +15,7 @@ function LoginPage() {
 		},
 		onError: (error: AxiosError) => {
 			console.log(error);
+			alert('로그인에 실패했습니다.');
 		},
 	});
 	return <LoginForm mutate={mutate} />;

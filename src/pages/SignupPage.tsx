@@ -13,6 +13,7 @@ function SignupPage() {
 		},
 		onError: (error: AxiosError) => {
 			console.log(error);
+			alert('회원가입에 실패했습니다. 다른 이메일로 시도해주세요.');
 		},
 	});
 	return <SignupForm mutate={mutate} />;
