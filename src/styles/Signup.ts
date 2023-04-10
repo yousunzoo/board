@@ -43,6 +43,10 @@ export const Input = styled.input`
 	}
 `;
 
+export const Error = styled.p`
+	color: red;
+`;
+
 export const SignupButton = styled.button`
 	width: 100%;
 	height: 50px;
@@ -58,3 +62,5 @@ export const LoginButton = styled(SignupButton)`
 	color: #333;
 	margin-top: 10px;
 `;
+
+export const DuplicateCheckButton = styled.button``;

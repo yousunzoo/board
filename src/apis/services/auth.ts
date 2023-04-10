@@ -1,4 +1,4 @@
-import { UserPayload } from '../../interfaces/auth';
+import { RegisterRequest, UserPayload } from '../../interfaces/auth';
 import { AuthResponse, LoginRequest } from '../../interfaces/auth';
 import { axiosInstance } from '../axios';
 
@@ -7,7 +7,7 @@ export const login = async (user: LoginRequest) => {
 	return data;
 };
 
-export const register = async (user: LoginRequest) => {
+export const register = async (user: RegisterRequest) => {
 	const { data } = await axiosInstance.post<AuthResponse>('api/auth/register', user);
 	return data;
 };

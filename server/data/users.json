@@ -28,5 +28,11 @@
 		"username": "testtest",
 		"email": "test5@test.com",
 		"password": "$2b$10$N6BXUtTXIYjtrn8AdzEoguDeL8HFmQqcU.kp4H05ul84jh8JP1V.K"
+	},
+	{
+		"id": 6,
+		"username": "yousunzoo",
+		"email": "yousunzoo@naver.com",
+		"password": "$2b$10$/hbbidGOibzci27psMlwsuwuaSRW3fXhJsCwYTH6DZaNM0LlDN.GO"
 	}
 ]
